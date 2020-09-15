@@ -10,13 +10,13 @@ namespace parcial1.usuarios
 
             public string Nombre { get; set; }
 
-            public string CC { get; set; }
+            public int CC { get; set; }
 
         #endregion Properties
 
         #region Metodos
 
-            public bool EnterMenu(string CCAcess)
+            public bool EnterMenu(int CCAcess)
             {
                 bool responde = false;
                 if(CC == CCAcess)
@@ -34,24 +34,13 @@ namespace parcial1.usuarios
         #region properties
         public string Materia { get; set; }
 
-        private reserva reservas;
+        public salon reservas { get; set; }
         
 
         #endregion properties
 
 
         #region getters & setters
-        private reserva Reservas
-        {
-            get { return Reservas; }
-            set
-            {
-                if (Reservas == null)
-                {
-                    Reservas = value;
-                }
-            }
-        }
 
         #endregion getters & setters
     }

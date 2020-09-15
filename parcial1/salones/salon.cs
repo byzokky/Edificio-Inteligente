@@ -14,8 +14,6 @@ namespace parcial1.salones
 
         public bool luz;
 
-        public int[] hora = new int[6];
-
         #endregion Properties
     }
 }

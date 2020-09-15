@@ -1,9 +1,9 @@
+using parcial1.salones;
+
 namespace parcial1.reservas
 {
     public class reserva
     {
-        public int TopReserva { get; set; }
-
-        public int SalaRes { get; set; }
+        public salon SalaRes { get; set; }
     }
 }
